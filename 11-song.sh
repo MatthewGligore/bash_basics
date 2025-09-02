@@ -1,44 +1,45 @@
 #!/bin/sh
 
-
 while [ true ]; do
 
-   # you can show a prompt with the read command
-   read -p "Do rae mi fa so la ti do? (q to end) > " note
+   # updated prompt
+   read -p "Name a planet in our solar system (q to end) > " planet
 
-case $note in
-   # each case matches a pattern
-   do|Do)
-      echo "Doe a deer a female deer"
-      ;;   
-   rae|Rae)
-      echo "Ray a drop of golden sun"
+case $planet in
+   Mercury|mercury)
+      echo "Mercury is the closest planet to the Sun."
       ;;
-   mi|Mi)
-      echo "Me a name a call myself"
+   Venus|venus)
+      echo "Venus is the hottest planet."
       ;;
-   fa|Fa)
-      echo "Far a long long way to run"
+   Earth|earth)
+      echo "Earth is our home planet!"
       ;;
-   so|So)
-      echo "So a note that follows fa"
+   Mars|mars)
+      echo "Mars is known as the Red Planet."
       ;;
-   la|La)
-      echo "La a note that follow so"
+   Jupiter|jupiter)
+      echo "Jupiter is the largest planet in the solar system."
       ;;
-   ti|ta)
-      echo "Tea I drink with jam and bread"
+   Saturn|saturn)
+      echo "Saturn is famous for its rings."
+      ;;
+   Uranus|uranus)
+      echo "Uranus rotates on its side."
+      ;;
+   Neptune|neptune)
+      echo "Neptune is the farthest planet from the Sun."
       ;;
    q)
-      echo "Hope you enjoyed the sound of music"
+      echo "Goodbye, stargazer!"
       exit 0
       ;;
-   *) 
-      echo "Not a note"
+   *)
+      echo "That is not a recognized planet."
       ;;
 esac
 
 done
 
-# exercise: Change the input question and case 
-# statement to another theme. 
+# exercise: Change the input question and case
+# statement to another theme.
