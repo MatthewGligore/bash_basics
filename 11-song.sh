@@ -7,6 +7,7 @@ while [ true ]; do
 
 case $planet in
    Mercury|mercury)
+<<<<<<< HEAD
       echo "Mercury is the closest planet to the Sun."
       ;;
    Venus|venus)
@@ -17,6 +18,18 @@ case $planet in
       ;;
    Mars|mars)
       echo "Mars is known as the Red Planet."
+=======
+      echo "Mercury is really hot bro."
+      ;;
+   Venus|venus)
+      echo "Venus is the even hotter than mercury somehow."
+      ;;
+   Earth|earth)
+      echo "Earth is a very low chance of being hit by an asteroid."
+      ;;
+   Mars|mars)
+      echo "Mars is Elon Musks favorite planet."
+>>>>>>> Matthew
       ;;
    Jupiter|jupiter)
       echo "Jupiter is the largest planet in the solar system."
